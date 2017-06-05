@@ -5,7 +5,7 @@
 struct pack 
 { 
 int x; 
-char string [255]; 
+char str [255]; 
 float y; 
 }; 
 
@@ -28,7 +28,7 @@ int main(int argc, char * argv[]) {
 	i = 0;
 	while(fread (&pack, sizeof(struct pack), 1, fp))
 	{ 
-		printf("%d %s %f \n", pack.x, pack.string, pack.y); 
+		printf("%d %s %f \n", pack.x, pack.str, pack.y); 
 		i++; 
 	}
 	razmer = i * sizeof(pack); 

@@ -2,7 +2,8 @@
 #include <stdio.h> 
 #include <stdlib.h> 
 
-struct package { 
+struct pack 
+{ 
 int x; 
 char string [255]; 
 float y; 
@@ -16,14 +17,17 @@ int main(int argc, char * argv[]) {
     printf("Argument: %s\n", argv[1]);
     fname = argv[1];
     fp = fopen(fname, "rb");
-	if (fp == NULL) {
+	if (fp == NULL) 
+	{
 		printf ("wrong");
 		return 1;
 	}
+
    	else printf ("correct");
-	struct package pack; 
+	struct pack pack; 
 	i = 0;
-	while(fread (&pack, sizeof(struct package), 1, fp)){ 
+	while(fread (&pack, sizeof(struct pack), 1, fp))
+	{ 
 		printf("%d %s %f \n", pack.x, pack.string, pack.y); 
 		i++; 
 	}

@@ -9,7 +9,8 @@ char str [255];
 float y; 
 }; 
 
-int main(int argc, char * argv[]) { 
+int main(int argc, char * argv[])
+{ 
 	int i;
 	int size; 
 	FILE *fp; 

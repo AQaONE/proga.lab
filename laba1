@@ -1,7 +1,6 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h> 
 #include <stdlib.h> 
-
-#define j 1
 
 struct package { 
 int x; 
@@ -14,8 +13,8 @@ int main(int argc, char * argv[]) {
 	int razmer; 
 	FILE *fp; 
 	char * fname;
-    printf("Argument: %s\n", argv[j]);
-    fname = argv[j];
+    printf("Argument: %s\n", argv[1]);
+    fname = argv[1];
     fp = fopen(fname, "rb");
 	if (fp == NULL) {
 		printf ("wrong");

@@ -14,7 +14,7 @@ int main(int argc, char * argv[]) {
 	int size; 
 	FILE *fp; 
 	char * fname;
-    printf("Argument: %s\n", argv[1]);
+    printf("Enter correct file name: %s\n", argv[1]);
     fname = argv[1];
     fp = fopen(fname, "rb");
 	if (fp == NULL) 
